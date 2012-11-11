@@ -1,0 +1,167 @@
+﻿@model PresentationLayer.Models.RegisterModel
+
+@{
+	ViewBag.Title = "Speaker Registration";
+}
+
+@section Styles {
+    <link href="@Url.Content("~/Content/Register.css")" rel="stylesheet" type="text/css" />
+}
+
+<h2>Speaker Registration</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+     <fieldset id="step-1">
+        <legend>Step 1: Personal Information</legend>
+		
+		<p>Please tell us about yourself.</p>
+
+       <div class="editor-label">
+            @Html.LabelFor(model => model.FirstName)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastName)
+            @Html.ValidationMessageFor(model => model.LastName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employer)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Employer)
+            @Html.ValidationMessageFor(model => model.Employer)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.YearsExperience)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.YearsExperience)
+            @Html.ValidationMessageFor(model => model.YearsExperience)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.HasBlog)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.HasBlog)
+            @Html.ValidationMessageFor(model => model.HasBlog)
+        </div>
+
+        <div id="blog-url-wrapper">
+			<div class="editor-label">
+				@Html.LabelFor(model => model.BlogURL)
+			</div>
+			<div class="editor-field">
+				@Html.EditorFor(model => model.BlogURL)
+				@Html.ValidationMessageFor(model => model.BlogURL)
+			</div>
+		</div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.HasBeard)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.HasBeard)
+            @Html.ValidationMessageFor(model => model.HasBeard)
+        </div>
+
+	    <p>
+            <input type="submit" id="go-to-step-2" data-target="2" class="continue" value="Continue &gt;" />
+        </p>
+	</fieldset>
+	
+	<fieldset id="step-2" class="step">
+		<legend>Step 2: Certifications</legend>
+		<div class="editor-label">
+            <label>Please list any current certifications you hold.</label>
+        </div>
+
+		@Html.HiddenFor(model => model.NumCerts)
+
+		<ul id="certifications" style="list-style-type:none; padding-left:0px;">
+			@for (int certIndex = 0; certIndex < Model.Certifications.Count(); certIndex++)
+			{
+				<li class="certification">
+					@Html.TextBoxFor(model => model.Certifications[certIndex])
+					@Html.ValidationMessageFor(model => model.Certifications[certIndex])
+				</li>
+			}
+		</ul>
+
+	    <p>
+            <input type="submit" id="go-to-step-1" data-target="1" class="back" value="&lt; Back" />
+            <input type="submit" id="go-to-step-3" data-target="3" class="continue" value="Continue &gt;" />
+        </p>
+	</fieldset>
+
+	<fieldset id="step-3" class="step">
+		<legend>Step 3: Session Information</legend>
+		
+		<p>Tell us about the sessions you would like to present.</p>
+		@Html.HiddenFor(model => model.NumSessions)
+
+		<div id="sessions">
+			@for (int sessionIndex = 0; sessionIndex < Model.Sessions.Count(); sessionIndex++)
+			{
+				<div class="session">
+					<h3>Session <span class="session-number">@Model.Sessions[sessionIndex].Number</span></h3>
+					<div class="editor-label">
+						@Html.LabelFor(model => model.Sessions[sessionIndex].Name)
+					</div>
+					<div class="editor-field">
+						@Html.EditorFor(model => model.Sessions[sessionIndex].Name)
+						@Html.ValidationMessageFor(model => model.Sessions[sessionIndex].Name)
+					</div>
+
+					<div class="editor-label">
+						@Html.LabelFor(model => model.Sessions[sessionIndex].Description)
+					</div>
+					<div class="editor-field">
+						@Html.TextAreaFor(model => model.Sessions[sessionIndex].Description)
+						@Html.ValidationMessageFor(model => model.Sessions[sessionIndex].Description)
+					</div>
+				</div>
+			}
+		</div>
+
+		<p>
+			<input type="button" value="Add Session" id="add-session" />
+		</p>
+
+	    <p style="padding-top:30px;">
+           <input type="submit" id="go-to-step-2" data-target="2" class="back" value="&lt; Back" />
+           <input type="submit" data-target="4" class="continue" value="Submit Speaker Registration" />
+        </p>
+	</fieldset>
+	
+	<fieldset id="step-4" class="step">
+		<h2>Thank you for registering!</h2>
+		<p>Based on the data you entered, you'll be sipping MaiTai's on the beach in no time! Bring your laptop and come party with us!</p>
+		<p style="padding-top:20px;">Sincerely,</p>
+		<p>-Your pals in the middle of the ocean</p>
+	</fieldset>
+}
+<script src="/Scripts/Register/Register.js"></script>

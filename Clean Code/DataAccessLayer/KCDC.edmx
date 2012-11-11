@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="KCDC2012Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="KCDC2012ModelStoreContainer">
+          <EntitySet Name="RegistrationFee" EntityType="KCDC2012Model.Store.RegistrationFee" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Session" EntityType="KCDC2012Model.Store.Session" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Speaker" EntityType="KCDC2012Model.Store.Speaker" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Technology" EntityType="KCDC2012Model.Store.Technology" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="RegistrationFee">
+          <Key>
+            <PropertyRef Name="RegistrationFeeID" />
+          </Key>
+          <Property Name="RegistrationFeeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MinYearsExperience" Type="int" Nullable="false" />
+          <Property Name="MaxYearsExperience" Type="int" Nullable="false" />
+          <Property Name="Fee" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="SessionID" />
+          </Key>
+          <Property Name="SessionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="Approved" Type="bit" />
+        </EntityType>
+        <EntityType Name="Speaker">
+          <Key>
+            <PropertyRef Name="SpeakerID" />
+          </Key>
+          <Property Name="SpeakerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="varchar" MaxLength="50" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="DateOfBirth" Type="date" />
+          <Property Name="YearsExperience" Type="int" />
+          <Property Name="HasBeard" Type="bit" />
+          <Property Name="BlogURL" Type="varchar" MaxLength="500" />
+          <Property Name="Employer" Type="varchar" MaxLength="50" />
+          <Property Name="RegistrationDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Technology">
+          <Key>
+            <PropertyRef Name="TechnologyID" />
+          </Key>
+          <Property Name="TechnologyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Technology" Type="varchar" MaxLength="50" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KCDC2012Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="KCDC2012Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="RegistrationFees" EntityType="KCDC2012Model.RegistrationFee" />
+          <EntitySet Name="Speakers" EntityType="KCDC2012Model.Speaker" />
+          <EntitySet Name="Technologies" EntityType="KCDC2012Model.Technology" />
+          <EntitySet Name="Sessions" EntityType="KCDC2012Model.Session" />
+        </EntityContainer>
+        <EntityType Name="RegistrationFee">
+          <Key>
+            <PropertyRef Name="RegistrationFeeID" />
+          </Key>
+          <Property Name="RegistrationFeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MinYearsExperience" Type="Int32" Nullable="false" />
+          <Property Name="MaxYearsExperience" Type="Int32" Nullable="false" />
+          <Property Name="Fee" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Speaker">
+          <Key>
+            <PropertyRef Name="SpeakerID" />
+          </Key>
+          <Property Name="SpeakerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DateOfBirth" Type="DateTime" />
+          <Property Name="YearsExperience" Type="Int32" />
+          <Property Name="HasBeard" Type="Boolean" />
+          <Property Name="BlogURL" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Employer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RegistrationDate" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="Technology">
+          <Key>
+            <PropertyRef Name="TechnologyID" />
+          </Key>
+          <Property Name="TechnologyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Technology1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="SessionID" />
+          </Key>
+          <Property Type="Int32" Name="SessionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Approved" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KCDC2012ModelStoreContainer" CdmEntityContainer="KCDC2012Entities">
+          <EntitySetMapping Name="RegistrationFees"><EntityTypeMapping TypeName="KCDC2012Model.RegistrationFee"><MappingFragment StoreEntitySet="RegistrationFee">
+            <ScalarProperty Name="RegistrationFeeID" ColumnName="RegistrationFeeID" />
+            <ScalarProperty Name="MinYearsExperience" ColumnName="MinYearsExperience" />
+            <ScalarProperty Name="MaxYearsExperience" ColumnName="MaxYearsExperience" />
+            <ScalarProperty Name="Fee" ColumnName="Fee" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Speakers"><EntityTypeMapping TypeName="KCDC2012Model.Speaker"><MappingFragment StoreEntitySet="Speaker">
+            <ScalarProperty Name="SpeakerID" ColumnName="SpeakerID" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+            <ScalarProperty Name="YearsExperience" ColumnName="YearsExperience" />
+            <ScalarProperty Name="HasBeard" ColumnName="HasBeard" />
+            <ScalarProperty Name="BlogURL" ColumnName="BlogURL" />
+            <ScalarProperty Name="Employer" ColumnName="Employer" />
+            <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Technologies"><EntityTypeMapping TypeName="KCDC2012Model.Technology"><MappingFragment StoreEntitySet="Technology">
+            <ScalarProperty Name="TechnologyID" ColumnName="TechnologyID" />
+            <ScalarProperty Name="Technology1" ColumnName="Technology" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Sessions">
+            <EntityTypeMapping TypeName="KCDC2012Model.Session">
+              <MappingFragment StoreEntitySet="Session">
+                <ScalarProperty Name="Approved" ColumnName="Approved" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="KCDC">
+        <EntityTypeShape EntityType="KCDC2012Model.RegistrationFee" Width="1.5" PointX="0.75" PointY="0.75" Height="1.787985026041667" IsExpanded="true" />
+        <EntityTypeShape EntityType="KCDC2012Model.Speaker" Width="1.5" PointX="2.75" PointY="0.75" Height="2.9417936197916656" IsExpanded="true" />
+        <EntityTypeShape EntityType="KCDC2012Model.Technology" Width="1.5" PointX="4.75" PointY="0.75" Height="1.4033821614583326" IsExpanded="true" />
+        <EntityTypeShape EntityType="KCDC2012Model.Session" Width="1.5" PointX="0.75" PointY="4.75" Height="1.7879850260416674" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

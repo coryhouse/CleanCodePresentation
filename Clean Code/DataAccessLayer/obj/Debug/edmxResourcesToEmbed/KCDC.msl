@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KCDC2012ModelStoreContainer" CdmEntityContainer="KCDC2012Entities">
+    <EntitySetMapping Name="RegistrationFees">
+      <EntityTypeMapping TypeName="KCDC2012Model.RegistrationFee">
+        <MappingFragment StoreEntitySet="RegistrationFee">
+          <ScalarProperty Name="RegistrationFeeID" ColumnName="RegistrationFeeID" />
+          <ScalarProperty Name="MinYearsExperience" ColumnName="MinYearsExperience" />
+          <ScalarProperty Name="MaxYearsExperience" ColumnName="MaxYearsExperience" />
+          <ScalarProperty Name="Fee" ColumnName="Fee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Speakers">
+      <EntityTypeMapping TypeName="KCDC2012Model.Speaker">
+        <MappingFragment StoreEntitySet="Speaker">
+          <ScalarProperty Name="SpeakerID" ColumnName="SpeakerID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="YearsExperience" ColumnName="YearsExperience" />
+          <ScalarProperty Name="HasBeard" ColumnName="HasBeard" />
+          <ScalarProperty Name="BlogURL" ColumnName="BlogURL" />
+          <ScalarProperty Name="Employer" ColumnName="Employer" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Technologies">
+      <EntityTypeMapping TypeName="KCDC2012Model.Technology">
+        <MappingFragment StoreEntitySet="Technology">
+          <ScalarProperty Name="TechnologyID" ColumnName="TechnologyID" />
+          <ScalarProperty Name="Technology1" ColumnName="Technology" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sessions">
+      <EntityTypeMapping TypeName="KCDC2012Model.Session">
+        <MappingFragment StoreEntitySet="Session">
+          <ScalarProperty Name="Approved" ColumnName="Approved" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KCDC2012Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="KCDC2012Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="RegistrationFees" EntityType="KCDC2012Model.RegistrationFee" />
+    <EntitySet Name="Speakers" EntityType="KCDC2012Model.Speaker" />
+    <EntitySet Name="Technologies" EntityType="KCDC2012Model.Technology" />
+    <EntitySet Name="Sessions" EntityType="KCDC2012Model.Session" />
+  </EntityContainer>
+  <EntityType Name="RegistrationFee">
+    <Key>
+      <PropertyRef Name="RegistrationFeeID" />
+    </Key>
+    <Property Name="RegistrationFeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MinYearsExperience" Type="Int32" Nullable="false" />
+    <Property Name="MaxYearsExperience" Type="Int32" Nullable="false" />
+    <Property Name="Fee" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Speaker">
+    <Key>
+      <PropertyRef Name="SpeakerID" />
+    </Key>
+    <Property Name="SpeakerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DateOfBirth" Type="DateTime" />
+    <Property Name="YearsExperience" Type="Int32" />
+    <Property Name="HasBeard" Type="Boolean" />
+    <Property Name="BlogURL" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Employer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="RegistrationDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Technology">
+    <Key>
+      <PropertyRef Name="TechnologyID" />
+    </Key>
+    <Property Name="TechnologyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Technology1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Session">
+    <Key>
+      <PropertyRef Name="SessionID" />
+    </Key>
+    <Property Type="Int32" Name="SessionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Approved" />
+  </EntityType>
+</Schema>

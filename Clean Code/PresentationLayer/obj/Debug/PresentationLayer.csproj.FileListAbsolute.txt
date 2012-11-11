@@ -1,0 +1,43 @@
+C:\Users\Cory\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\PresentationLayer.dll
+C:\Users\Cory\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\PresentationLayer.pdb
+C:\Users\Cory\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\EntityFramework.dll
+C:\Users\Cory\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\EntityFramework.xml
+C:\Users\Cory\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Cory\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.dll
+C:\Users\Cory\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\Cory\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\Business Layer.dll
+C:\Users\Cory\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\DataAccessLayer.dll
+C:\Users\Cory\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\Business Layer.pdb
+C:\Users\Cory\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\DataAccessLayer.pdb
+C:\Users\chouse\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\PresentationLayer.dll
+C:\Users\chouse\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\PresentationLayer.pdb
+C:\Users\chouse\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\Business Layer.dll
+C:\Users\chouse\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\DataAccessLayer.dll
+C:\Users\chouse\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\Business Layer.pdb
+C:\Users\chouse\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\EntityFramework.xml
+C:\Users\chouse\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\bin\DataAccessLayer.pdb
+C:\Users\chouse\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\chouse\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.dll
+C:\Users\chouse\Dropbox\Presentations\2012 - 04 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 08 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 08 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.dll
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 08 Clean Code\Clean Code\PresentationLayer\bin\PresentationLayer.dll
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 08 Clean Code\Clean Code\PresentationLayer\bin\PresentationLayer.pdb
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 08 Clean Code\Clean Code\PresentationLayer\bin\Business Layer.dll
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 08 Clean Code\Clean Code\PresentationLayer\bin\EntityFramework.dll
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 08 Clean Code\Clean Code\PresentationLayer\bin\DataAccessLayer.dll
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 08 Clean Code\Clean Code\PresentationLayer\bin\Business Layer.pdb
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 08 Clean Code\Clean Code\PresentationLayer\bin\EntityFramework.xml
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 08 Clean Code\Clean Code\PresentationLayer\bin\DataAccessLayer.pdb
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 08 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\bin\PresentationLayer.dll
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\bin\PresentationLayer.pdb
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\bin\Business Layer.dll
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\bin\EntityFramework.dll
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\bin\DataAccessLayer.dll
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\bin\Business Layer.pdb
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\bin\EntityFramework.xml
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\bin\DataAccessLayer.pdb
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.dll
+C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.pdb

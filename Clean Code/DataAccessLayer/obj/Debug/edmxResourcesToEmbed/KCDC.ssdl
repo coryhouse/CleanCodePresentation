@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KCDC2012Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="KCDC2012ModelStoreContainer">
+    <EntitySet Name="RegistrationFee" EntityType="KCDC2012Model.Store.RegistrationFee" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Session" EntityType="KCDC2012Model.Store.Session" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Speaker" EntityType="KCDC2012Model.Store.Speaker" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Technology" EntityType="KCDC2012Model.Store.Technology" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="RegistrationFee">
+    <Key>
+      <PropertyRef Name="RegistrationFeeID" />
+    </Key>
+    <Property Name="RegistrationFeeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MinYearsExperience" Type="int" Nullable="false" />
+    <Property Name="MaxYearsExperience" Type="int" Nullable="false" />
+    <Property Name="Fee" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Session">
+    <Key>
+      <PropertyRef Name="SessionID" />
+    </Key>
+    <Property Name="SessionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="Approved" Type="bit" />
+  </EntityType>
+  <EntityType Name="Speaker">
+    <Key>
+      <PropertyRef Name="SpeakerID" />
+    </Key>
+    <Property Name="SpeakerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="YearsExperience" Type="int" />
+    <Property Name="HasBeard" Type="bit" />
+    <Property Name="BlogURL" Type="varchar" MaxLength="500" />
+    <Property Name="Employer" Type="varchar" MaxLength="50" />
+    <Property Name="RegistrationDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Technology">
+    <Key>
+      <PropertyRef Name="TechnologyID" />
+    </Key>
+    <Property Name="TechnologyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Technology" Type="varchar" MaxLength="50" />
+  </EntityType>
+</Schema>

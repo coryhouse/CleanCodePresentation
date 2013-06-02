@@ -41,3 +41,14 @@ C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean 
 C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
 C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.dll
 C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\PresentationLayer\bin\PresentationLayer.dll
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\PresentationLayer\bin\PresentationLayer.pdb
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\PresentationLayer\bin\Business Layer.dll
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\PresentationLayer\bin\EntityFramework.dll
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\PresentationLayer\bin\DataAccessLayer.dll
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\PresentationLayer\bin\Business Layer.pdb
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\PresentationLayer\bin\EntityFramework.xml
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\PresentationLayer\bin\DataAccessLayer.pdb
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.dll
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\PresentationLayer\obj\Debug\PresentationLayer.pdb

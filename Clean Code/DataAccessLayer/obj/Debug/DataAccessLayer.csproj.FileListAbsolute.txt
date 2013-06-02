@@ -21,3 +21,9 @@ C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean 
 C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

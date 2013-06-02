@@ -33,3 +33,10 @@ C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean 
 C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\Business Layer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\Business Layer\obj\Debug\Business Layer.dll
 C:\Users\Cory\Google Drive\Dropbox Folder\Dropbox\Presentations\2012 - 10 Clean Code\Clean Code\Business Layer\obj\Debug\Business Layer.pdb
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\Business Layer\bin\Debug\Business Layer.dll
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\Business Layer\bin\Debug\Business Layer.pdb
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\Business Layer\bin\Debug\DataAccessLayer.dll
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\Business Layer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\Business Layer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\Business Layer\obj\Debug\Business Layer.dll
+C:\Users\Cory\Documents\GitHub\CleanCodePresentation\Clean Code\Business Layer\obj\Debug\Business Layer.pdb

@@ -18,7 +18,6 @@ namespace BusinessLayer
 		public int? Exp { get; set; }
 		public bool HasBlog { get; set; }
 		public string BlogURL { get; set; }
-		public bool HasBeard { get; set; }
 		public WebBrowser Browser { get; set; }
 		public List<string> Certifications { get; set; }
 		public string Employer { get; set; }
@@ -51,7 +50,7 @@ namespace BusinessLayer
 
 						//DFCT #838 Jimmy 
 						//We're now requiring 3 certifications so I changed the hard coded number. Boy, programming is hard.
-						good = ((HasBeard == true && Exp > 10||HasBlog||Certifications.Count() > 3||emps.Contains(Employer)));
+						good = ((Exp > 10||HasBlog||Certifications.Count() > 3||emps.Contains(Employer)));
 								
 								
 								
@@ -173,7 +172,6 @@ namespace BusinessLayer
 										Email = Email,
 
 										YearsExperience = Exp,
-										HasBeard = HasBeard,
 										Employer = Employer
 									};
 
